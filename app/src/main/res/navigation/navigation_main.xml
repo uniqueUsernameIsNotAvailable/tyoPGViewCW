@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/DBConnectFragment2">
+
+    <fragment
+        android:id="@+id/DBConnectFragment2"
+        android:name="com.tyomased.pgportable.fragments.DBConnectFragment"
+        android:label="DBConnectFragment"
+        tools:layout="@layout/fragment_dbconnect">
+        <action
+            android:id="@+id/action_DBConnectFragment2_to_DBViewFragment"
+            app:destination="@id/DBViewFragment"
+            app:enterAnim="@anim/anim_slide_left"
+            app:exitAnim="@anim/anim_scale_out"
+            app:popEnterAnim="@anim/anim_scale_in"
+            app:popExitAnim="@anim/anim_slide_right" />
+        <action
+            android:id="@+id/action_DBConnectFragment2_to_DBTablesViewFragment"
+            app:destination="@+id/DBTablesViewFragment"
+            app:enterAnim="@anim/anim_slide_left"
+            app:exitAnim="@anim/anim_scale_out"
+            app:popEnterAnim="@anim/anim_scale_in"
+            app:popExitAnim="@anim/anim_slide_right" />
+        <action
+            android:id="@+id/action_tmp_toTableView"
+            app:destination="@id/tableViewFragment"
+            app:enterAnim="@anim/anim_slide_left"
+            app:exitAnim="@anim/anim_scale_out"
+            app:popEnterAnim="@anim/anim_scale_in"
+            app:popExitAnim="@anim/anim_slide_right" />
+        <action
+            android:id="@+id/action_DBConnectFragment2_to_querytool"
+            app:destination="@id/querytool" />
+    </fragment>
+    <fragment
+        android:id="@+id/DBViewFragment"
+        android:name="com.tyomased.pgportable.fragments.DBViewFragment"
+        android:label="DBViewFragment"
+        tools:layout="@layout/fragment_dbview">
+        <action
+            android:id="@+id/action_DBViewFragment_to_DBTablesViewFragment"
+            app:destination="@id/DBTablesViewFragment"
+            app:enterAnim="@anim/anim_slide_left"
+            app:exitAnim="@anim/anim_scale_out"
+            app:popEnterAnim="@anim/anim_scale_in"
+            app:popExitAnim="@anim/anim_slide_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/DBTablesViewFragment"
+        android:name="com.tyomased.pgportable.fragments.DBTablesViewFragment"
+        android:label="DBTablesViewFragment"
+        tools:layout="@layout/fragment_dbtables_view">
+        <action
+            android:id="@+id/action_DBTables_to_DBConnect"
+            app:destination="@id/DBConnectFragment2"
+            app:enterAnim="@anim/anim_scale_in"
+            app:exitAnim="@anim/anim_slide_right"
+            app:popEnterAnim="@anim/anim_slide_left"
+            app:popExitAnim="@anim/anim_scale_out" />
+        <action
+            android:id="@+id/action_DBTables_to_TableView"
+            app:destination="@id/tableViewFragment"
+            app:enterAnim="@anim/anim_slide_left"
+            app:exitAnim="@anim/anim_scale_out"
+            app:popEnterAnim="@anim/anim_scale_in"
+            app:popExitAnim="@anim/anim_slide_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/tableViewFragment"
+        android:name="com.tyomased.pgportable.fragments.TableViewFragment"
+        android:label="TableViewFragment"
+        tools:layout="@layout/fragment_table_view">
+        <action
+            android:id="@+id/action_tableViewFragment_to_DBTablesViewFragment"
+            app:destination="@id/DBTablesViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/querytool"
+        android:name="com.tyomased.pgportable.fragments.QueryToolFragment"
+        android:label="fragment_querytool"
+        tools:layout="@layout/fragment_querytool" />
+</navigation>

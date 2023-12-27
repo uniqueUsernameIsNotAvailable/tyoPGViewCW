@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#448AFF</color>
+
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="accent">#448AFF</color>
+    <color name="primary_text">#212121</color>
+    <color name="black">#000000</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="icons_dark">#757575</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="blur">#55212121</color>
+    <color name="fragment_background">#FFFFFFFF</color>
+
+    <color name="table_cell_updated">#88FFFF00</color>
+    <color name="table_cell_new">#888BC34A</color>
+    <color name="table_cell_deleted">#88FF4F4F</color>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/newRow"
+        android:title="New row" />
+
+    <item
+        android:id="@+id/reset"
+        android:title="Reset" />
+    <item
+        android:id="@+id/export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Export" />
+</menu>
